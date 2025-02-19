@@ -12,7 +12,7 @@ function programForUser(user) {
 }
 
 async function play(provider, program, coinFlip, playerOne, playerTwo) {
-  const playerChoice = 1;
+  const playerChoice = 2;
   const randomSeed = new anchor.BN(Math.floor(Math.random() * 100000));
 
   const tx = await program.rpc.play(playerChoice, randomSeed, {
